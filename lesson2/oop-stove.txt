@@ -1,0 +1,28 @@
+Fields
+
+ovenTemp: 0C to 450C
+
+burnerLevel: Off, Low, Med, High
+
+
+Methods:
+
+stoveState:
+ Returns values of:
+	burnerState: On, Off
+	ovenState: On, Off
+Dependent on the values in burnerLevel and stoveTemp
+
+burnerOff:
+sets burnerLevel to Off
+returns value of burnerState
+
+
+ovenOff:
+sets ovenTemp to 0C
+returns value of ovenState
+
+ovenOn:
+accepts parameter called temp that is >0C and =<450C
+sets ovenTemp = temp
+returns fields of ovenTemp and ovenState
